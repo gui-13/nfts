@@ -7,7 +7,7 @@ import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
-    <div className="bg-bodyBackground font-sans overflow-hidden">
+    <div className="bg-bodyBackground font-sans overflow-hidden text-white">
       <div className="max-h-max w-full bg-[url('../assets/background.png')] bg-no-repeat bg-center bg-cover">
         <Header />
         <Main />

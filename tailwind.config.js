@@ -1,3 +1,5 @@
+const { fontFamily } = require('tailwindcss/defaultTheme')
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,6 +9,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Montserrat', ...fontFamily.sans],
+      },
+      colors: { 
+        bodyBackground: '#0e0e0e',
+        backgroundCard: '#252525',
+        textRed: '#FF5B50',
+        textInfo: '#5A5757'
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
